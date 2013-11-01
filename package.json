@@ -1,0 +1,20 @@
+{
+  "name": "y",
+  "version": "0.0.0",
+  "description": "Simple object inspection tool",
+  "main": "y.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eliasgs/y"
+  },
+  "keywords": [
+    "inspect",
+    "debug",
+    "trace"
+  ],
+  "author": "Elias G. Schneevoigt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eliasgs/y/issues"
+  }
+}
