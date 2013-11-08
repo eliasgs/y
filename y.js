@@ -3,7 +3,7 @@ module.exports = function () {
   var err = new Error();
   Error.captureStackTrace(err, arguments.callee);
   var stack = err.stack.split('\n');
-  console.log('\u001b[36m' + new Date() + stack[1] + '\u001b[39m');
+  console.log('\u001b[36m' + new Date().toJSON() + stack[1] + '\u001b[39m');
 
   for (var i=0; i<arguments.length; i++){
     var type =  Object.prototype.toString.call(arguments[i]);
