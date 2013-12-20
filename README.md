@@ -13,14 +13,14 @@ require('y')(obj1, obj2);
 ```
 
 The default recursion depth of an inspected object is 2. This can be change by
-setting a ``depth`` property on the required function.
+calling the ``set()`` function with a new settings object.
 ```javascript
-require('y').depth = 4;
+require('y').set({depth: 4});
 require('y')(obj);
 ```
 
 To make it recurse indefinitely set ``depth`` to ``null``. 
 ```javascript
-require('y').depth = null;
-require('y')(obj);
+var y = require('y').set({depth: null});
+y(obj);
 ```
