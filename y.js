@@ -17,6 +17,7 @@ function y() {
     console.log('\u001b[4m%s\u001b[24m', type);
     console.log(util.inspect(arguments[i], true, depth, true));
   }
+  return y;
 }
 
 y.set = function (settings) {
