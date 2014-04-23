@@ -20,6 +20,9 @@ function y() {
 }
 
 y.set = function (settings) {
-  y.settings = settings;
+  settings = settings || {};
+  y.settings = y.settings || {};
+  y.settings.depth = settings.depth || y.settings.depth;
+  y.settings.stackSize = settings.stackSize || y.settings.stackSize;
   return y;
 };
