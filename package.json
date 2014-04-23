@@ -3,6 +3,9 @@
   "version": "0.2.4",
   "description": "Simple object inspection tool",
   "main": "y.js",
+  "scripts": {
+    "test": "node test"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/eliasgs/y"
