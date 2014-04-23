@@ -44,6 +44,13 @@ test('testing increase depth', function () {
   };
   y.set({depth: depth})('test');
 });
+test('testing indefinite depth', function () {
+  var depth = null;
+  util.inspect = function () {
+    assert.strictEqual(arguments[2], depth);
+  };
+  y.set({depth: depth})('test');
+});
 test('testing increase stackSize', function () {
   var stackSize = 4;
   console.log = function () {
