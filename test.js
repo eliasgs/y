@@ -34,7 +34,7 @@ test('testing defaults', function () {
   util.inspect = function () {
     assert.equal(arguments[2], 1);
   };
-  assert.strictEqual(settings, undefined);
+  assert.equal(Object.keys(settings).length, 0);
   assert.equal(calls, 3);
 });
 test('testing increase depth', function () {
