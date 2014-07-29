@@ -24,6 +24,9 @@ function y() {
 
 y.set = function (settings) {
   settings = settings || {};
+  if (settings.title) {
+    console.log('\u001b[31m%s\u001b[39m', settings.title);
+  }
   y.settings = y.settings || {};
   y.settings.depth = (settings.depth === null)?
                       null:
